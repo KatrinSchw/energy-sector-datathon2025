@@ -1,1 +1,1 @@
-# energy-price-dynamics
+# energy-sector-datathon2025
