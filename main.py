@@ -15,6 +15,13 @@ from weekly_supply_estimates import (
     plot_variable_with_outage,
 )
 
+from monthly_transportation import (
+    plot_vehicle_miles,
+    plot_gasoline_prices_vs_vehicle_miles,
+    plot_transit_ridership,
+    plot_transit_ridership_vs_gasoline_prices
+)
+
 if __name__ == '__main__':
     #plot_gasoline_prices()
     #plot_gasoline_stocks()
@@ -23,6 +30,8 @@ if __name__ == '__main__':
     #plot_gross_inputs()
     # plot_gasoline_imports()
     # plot_gasoline_exports()
+
+
     plots = {
         'Weekly U.S. Ending Stocks of Total Gasoline  (Thousand Barrels)':
             ('Ending Stocks of Total Gasoline', 'navy'),
@@ -48,3 +57,7 @@ if __name__ == '__main__':
         )
 
     plot_gasoline_prices_with_outages()
+    # plot_vehicle_miles()
+    plot_gasoline_prices_vs_vehicle_miles()
+    plot_transit_ridership()
+    plot_transit_ridership_vs_gasoline_prices()
